@@ -53,7 +53,7 @@ def test(length):
 
 print(test(10).print())
 print(test(1).print())
-print(test(4).print())
+print(test(0).print())
 
 
 

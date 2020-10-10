@@ -7,9 +7,10 @@ class Cache(object):
         self.capacity = capacity
 
     def add(self, key, value):
-        if len(self.orderedDict) >= self.capacity:
-            self.orderedDict.popitem(last = False)
-        self.orderedDict[key] = value
+        if self.capacity > 0:
+            if len(self.orderedDict) >= self.capacity:
+                self.orderedDict.popitem(last = False)
+            self.orderedDict[key] = value
 
     def get(self, key):
         if key is None:
@@ -26,7 +27,7 @@ class Cache(object):
 
 
 # Test case 1
-cache = Cache(3)
+cache = Cache(0)
 
 cache.add(1, 1)
 cache.add(2, 2)

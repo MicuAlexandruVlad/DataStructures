@@ -18,6 +18,8 @@ def walk(p, ext):
 
 print(walk('./testdir', '.c'))
 
-print(walk('./testdir', '.h'))
+filePaths = []
+print(walk('./testdir/t1.h', '.h'))
 
+filePaths = []
 print(walk('./testdir', '.d'))

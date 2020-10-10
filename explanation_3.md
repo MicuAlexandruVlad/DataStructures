@@ -4,3 +4,4 @@ To implement the Huffman coding algorithm I decided to choose a binary tree as t
 
 - The `huffman_encoding()` method has a space complexity of O(n) because it has to traverse the entire original sentence to build out the tree and the Huffman dictionary and a time complexity of O(n*log(n)) because of the `sortDict()` method
 - The `huffman_decoding()` method has a time and space complexity of O(n) because it traverses the encoded sentence
+- n -> the number of characters in the input string

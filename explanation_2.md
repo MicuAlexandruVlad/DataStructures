@@ -4,3 +4,4 @@ This algorithm uses recursion to go through a file tree and searches for files w
 
 - Space complexity -> O(n)
 - Time complexity -> O(n)
+- n -> number of files
