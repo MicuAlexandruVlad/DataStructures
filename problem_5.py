@@ -43,12 +43,17 @@ class Chain:
         return l
 
 
-c = Chain()
-data1 = "data1"
-data2 = "data2"
-data3 = "data3"
-c.insert(data1)
-c.insert(data2)
-c.insert(data3)
-print(c.print()) # prints block chain
+def test(length):
+    c = Chain()
+    for i in range(length):
+        data = "data" + str(i)
+        c.insert(data)
+    
+    return c
+
+print(test(10).print())
+print(test(1).print())
+print(test(4).print())
+
+
 

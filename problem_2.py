@@ -17,3 +17,7 @@ def walk(p, ext):
 
 
 print(walk('./testdir', '.c'))
+
+print(walk('./testdir', '.h'))
+
+print(walk('./testdir', '.d'))
